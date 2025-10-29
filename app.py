@@ -7,8 +7,8 @@ def index():
 def submit():
     username=request.form['username']
     rollno=request.form['rollno']
-    email=request.form['email']
+    
     year=request.form['year']
-    return render_template('results.html',username=username,rollno=rollno,email=email,year=year)
+    return render_template('results.html',username=username,rollno=rollno,year=year)
 if __name__=='__main__':
     app.run(debug=True)

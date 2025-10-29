@@ -5,10 +5,10 @@ def index():
     return render_template('form.html')
 @app.route('/submit',methods=['POST'])
 def submit():
-    username=request.form['name']
+    username=request.form['username']
     rollno=request.form['rollno']
     
     year=request.form['year']
-    return render_template('results.html',name=name,rollno=rollno,year=year)
+    return render_template('results.html',username=username,rollno=rollno,year=year)
 if __name__=='__main__':
     app.run(host='0.0.0.0', port=5000,debug=True)

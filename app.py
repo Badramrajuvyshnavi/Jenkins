@@ -9,6 +9,6 @@ def submit():
     rollno=request.form['rollno']
     
     year=request.form['year']
-    return render_template('results.html',name=name,rollno=rollno,email=email,year=year)
+    return render_template('results.html',name=name,rollno=rollno,year=year)
 if __name__=='__main__':
     app.run(host='0.0.0.0', port=5000,debug=True)
